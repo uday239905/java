@@ -1,4 +1,4 @@
-
+package Arrays;
 import java.util.Scanner;
 public class PrintArray {
     public static void main(String[] args) {
@@ -18,5 +18,4 @@ public class PrintArray {
         System.out.print(a[i]+",");
     }
 }
-
 }
