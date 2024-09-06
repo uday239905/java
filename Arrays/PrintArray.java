@@ -13,9 +13,13 @@ public class PrintArray {
         System.out.println("enter array elements:"+i);
         a[i]=sc.nextInt();
     }
-    for(int i=0;i<=a.length-1;i++)
+    // for(int i=0;i<=a.length-1;i++)
+    // {
+    //     System.out.print(a[i]+",");
+    // }
+    for(int num:a)
     {
-        System.out.print(a[i]+",");
+        System.out.println (num);
     }
 }
 }

@@ -1,5 +1,5 @@
 package Arrays;
-import java.util.Scanner;
+import java.util.*;
 public class Bubblesort {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
@@ -8,6 +8,7 @@ public class Bubblesort {
         int [] a=new int[size];
         for(int i=0;i<a.length;i++)
         {
+            System.out.println("enter array elements:"+i);
             a[i]=s.nextInt();
         }
         for(int i=0;i<=a.length-1;i++)
@@ -21,12 +22,14 @@ public class Bubblesort {
                     a[j+1]=temp;
 
                 }
-                for(int k=0;k<=a.length-1;k++)
-                {
-                    System.out.println("array after sorting:"+a[k]);
-                }
+                
             }
+            
         }
+        for(int k=0;k<=a.length-1;k++)
+                {
+                    System.out.print(a[k]);
+                }
     }
     
 }

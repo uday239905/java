@@ -20,6 +20,7 @@ public class elementpresentinanarray {
             if(a[i]==n)
             {
             ispresent=true;
+            break;
             }
            
         }
@@ -28,7 +29,7 @@ public class elementpresentinanarray {
             System.out.println("element is present :");
         }
         else{
-            System.out.println("eelement is not found");
+            System.out.println("element is not found");
         }
         
 
