@@ -1,33 +1,26 @@
-package Arrays;
 import java.util.*;
-public class ElementsPresentInOddIndex {
+public class MaxElementInArray {
     public static void main(String[] args) {
-        
-    
         Scanner sc=new Scanner(System.in);
         System.out.println("enter array size");
         int size=sc.nextInt();
-        int [] a=new int[size];
+        int [] a=new int [size];
         for(int i=0;i<=a.length-1;i++)
         {
-            System.out.println("enter array elements");
+            System.out.println("enter array elements:"+i);
             a[i]=sc.nextInt();
         }
-        int sum=0;
+        int max=a[0];
         for(int i=0;i<=a.length-1;i++)
         {
-            if(a[i]%2==1)
+            if(a[i]>max)
             {
-                sum=sum+a[i];
-                System.out.println(sum);
-
+                max=a[i];
+                
             }
         }
+        System.out.println( "maximum value in []a is:"+max);
+        
     }
-}
-
-
-
     
-
-
+}
