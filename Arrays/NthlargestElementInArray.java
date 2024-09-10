@@ -10,6 +10,7 @@ public class NthlargestElementInArray {
         int [] a=new int[size];
         for(int i=0;i<=a.length-1;i++)
         {
+            System.out.println("enter array elemnets");
             a[i]=sc.nextInt();
         }
         System.out.println("which largest emelent you want");
@@ -23,25 +24,28 @@ public class NthlargestElementInArray {
             {
                 if(a[j]>le && a[j]<nle)
                 {
-                le=a[j];
+                 le=a[j];
                 }
             }
             nle=le;
             count++;
-        }
+        
+        
            
             if(count==n)
             {
-            
-            
-            System.out.println("nth largest element is :"+n);
-            
-
+                break;
+               
+               
+                
             }
-            else{
-                System.out.println("invalid");
-
-            }
+        }
+        System.out.println("nth largest element is :"+nle);
+             
+        
+        
+            
+            
             
 
                 
